@@ -2,6 +2,8 @@
 
 The stack object simply layers media and/or text-like content on top of each other.
 
+All `stack__layer` elements are positioned absolutely and grow to the size of their parent.
+
 The element that stack is applied to either needs defined height and width or a non-layer element within it to control its width and height. Without either, every element would be absolutely positioned so the container will collapse to 0x0.
 
 ```html
