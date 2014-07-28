@@ -1,0 +1,18 @@
+{
+  "name": "plumpcss-stack",
+  "version": "0.1.0",
+  "authors": [
+    "Jon Hurrell <jon@plumpdigital.co.uk>",
+    "James Howard <james@plumpdigital.co.uk>"
+  ],
+  "description": "The stack object simply layers media and/or text-like content on top of each other.",
+  "main": "_objects.stack.scss",
+  "keywords": [
+    "plumpcss",
+    "oocss",
+    "css",
+    "object"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.plumpdigital.co.uk/"
+}

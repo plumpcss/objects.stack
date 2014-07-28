@@ -1,0 +1,34 @@
+///*------------------------------------*\
+//   #STACK
+//\*------------------------------------*/
+
+//
+//    The stack object simply layers media and/or text-like content on top
+//    of each other.
+//
+
+
+
+
+
+//
+// 1. Set the positioning context.
+// 2. Set absolute position value to remove the element out of normal
+//    flow.
+// 3. Align elements to the tops of each other.
+// 4. Align elements to each otherâ€™s side.
+// 5. Set the width of the element to 100% of its parentâ€™s width.
+// 6. Set the height of the element to 100% of its parentâ€™s height.
+//
+.#{$plump-namespace}stack,
+%#{$plump-namespace}stack {
+	position: relative;           // [1]
+
+	&__layer {
+		position: absolute;       // [2]
+		top: 0;                   // [3]
+		left: 0;                  // [4]
+		width: 100%;              // [5]
+		height: 100%;             // [6]
+	}
+}
