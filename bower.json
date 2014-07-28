@@ -13,6 +13,9 @@
     "css",
     "object"
   ],
+  "dependencies": {
+     "plumpcss-defaults": "latest"
+  },
   "license": "MIT",
   "homepage": "http://www.plumpdigital.co.uk/"
 }
