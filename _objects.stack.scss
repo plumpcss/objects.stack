@@ -2,33 +2,29 @@
 //   #STACK
 //\*------------------------------------*/
 
-//
 //    The stack object simply layers media and/or text-like content on top
 //    of each other.
-//
 
+//    Predefine the variables below in order to alter and enable specific features.
+$plump-stack-namespace:             $plump-namespace !default;
 
-
-
-
-//
-// 1. Set the positioning context.
-// 2. Set absolute position value to remove the element out of normal
-//    flow.
-// 3. Align elements to the tops of each other.
-// 4. Align elements to each otherâ€™s side.
-// 5. Set the width of the element to 100% of its parentâ€™s width.
-// 6. Set the height of the element to 100% of its parentâ€™s height.
-//
-.#{$plump-namespace}stack,
-%#{$plump-namespace}stack {
+// 1. The stack needs positioning context for us to layer.
+// 2. Break the layer out of the typical content flow, rendering it as if
+//    it isn’t there.
+// 3. Give the browser a new bounding box for the layer. At this point the
+//    layer will fill all available space in its `stack` parent.
+//    For absolutely positioned elements, the top, right, bottom, and left
+//    properties specify offsets from the edge of the element’s containing
+//    block (what the element is positioned relative to).
+.#{$plump-namespace}o-stack,
+%#{$plump-namespace}o-stack {
 	position: relative;           // [1]
 
 	&__layer {
 		position: absolute;       // [2]
 		top: 0;                   // [3]
-		left: 0;                  // [4]
-		width: 100%;              // [5]
-		height: 100%;             // [6]
+		right: 0;                 // [3]
+		bottom: 0;                // [3]
+		left: 0;                  // [3]
 	}
 }
