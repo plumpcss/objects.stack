@@ -16,8 +16,8 @@ $plump-stack-namespace:             $plump-namespace !default;
 //    For absolutely positioned elements, the top, right, bottom, and left
 //    properties specify offsets from the edge of the element’s containing
 //    block (what the element is positioned relative to).
-.#{$plump-namespace}o-stack,
-%#{$plump-namespace}o-stack {
+.#{$plump-stack-namespace}o-stack,
+%#{$plump-stack-namespace}o-stack {
 	position: relative;           // [1]
 
 	&__layer {
